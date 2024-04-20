@@ -1,0 +1,48 @@
+
+@import "../../styles.scss";
+*{
+  font-family: var(--primary-font);
+  font-weight: 300;
+}
+#container_header{
+  display: flex;
+  align-items: center;
+  // background-color: #bcd7f291;
+  color: var(--text-color-primary-2);
+
+}
+#img_logo{
+  width: 250px;
+  height:128px;
+  padding: 3%;
+}
+
+#containerNavBar{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+#navbar {
+  padding-right: 10%;
+  ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    display:inline;
+  }
+  #menuLink {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+  #menuLink:hover {
+      color: var(--logo-color-blue);
+      font-weight: 400;
+  }
+
+}
