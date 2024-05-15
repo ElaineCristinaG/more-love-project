@@ -6,26 +6,28 @@
 }
 #container_header{
   display: flex;
+  justify-content:center;
   align-items: center;
-  // background-color: #bcd7f291;
   color: var(--text-color-primary-2);
+  // position: absolute;
 
 }
-#img_logo{
-  width: 250px;
-  height:128px;
-  padding: 3%;
+#containerLogo {
+  width: 40%;
+  #img_logo{
+    width: 100%;
+    padding-left: 3%;
+  }
 }
 
 #containerNavBar{
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-
+  padding-right: 2%;
 #navbar {
-  padding-right: 10%;
-  ul{
+  padding-right: 1%;
+  width:680px;
+  #navbarItens{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     list-style-type: none;
     margin: 0;
@@ -35,14 +37,21 @@
     display:inline;
   }
   #menuLink {
-    display: inline-block;
-    padding: 10px 20px;
+    display:inline-flex;
+    padding: 1% ;
     text-decoration: none;
-    color: #2c3e50;
+    color: var(--text-color-primary-2);
+    font-size: 1.8rem;
 }
   #menuLink:hover {
       color: var(--logo-color-blue);
-      font-weight: 400;
+      #navbar{
+        width: 720px;
+      }
+
   }
 
+
 }
+}
+
