@@ -20,5 +20,10 @@ import { JuridicalComponent } from '../juridical/juridical.component';
 })
 export class HomeComponent {
 
+  // const myCarouselElement = document.querySelector('#myCarousel')
 
+  // const carousel = new bootstrap.Carousel(myCarouselElement, {
+  //   interval: 2000,
+  //   touch: false
+  // })
 }

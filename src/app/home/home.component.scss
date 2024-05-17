@@ -36,6 +36,7 @@
   #containerIcons{
     position: fixed;
     right: 2%;
+    bottom: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,3 +48,13 @@
   }
 }
 
+.img1{
+  width: 200px;
+  height: 200px;
+}
+.containerCarousel{
+
+  width: 1000px;
+  height: 500px;
+  background-color: var(--logo-color-violet);
+}
