@@ -1,8 +1,34 @@
+<app-header></app-header>
+
 <section id="whoWeAre">
-  <h2>Quem Somos</h2> <br/><br/>
-  <p id="textSintese"> {{textSintese}} </p>
-  <h2>Como tudo começou</h2>
-  <p>{{textHistory1}} </p><br/>
-
-
+  <h2 class="t1">Quem Somos</h2> <br/>
+  <p id="textSintese"> {{textSintese1}} </p>
+  <p id="textSintese"> {{textSintese2}} </p>
+  <p id="textSintese"> {{textSintese3}} </p>
+  <p id="textSintese"> {{textSintese4}} </p>
+  <h2 class="t2">Como nasceu o projeto?</h2>
+  <div class="containerHistory">
+    <div class="containerText">
+      <p>{{textHistory1}} </p><br/>
+      <p>{{textHistory2}} </p><br/>
+      <p>{{textHistory3}} <b class="destaque">PROJETO O AMOR</b></p>
+    </div>
+    <div class="fotoA">
+      <img id="imgA" src="assets/images/fotos/projeto-amor-familia-filho-autista-deice.png" alt="foto-familia-da-mãe-iniciadora-do-projeto-mais-amor">
+    </div>
+  </div>
+  <div class="containerMission">
+    <div>
+      <h2 class="mission">Nossa Missão</h2>
+      <p>{{mission}} </p><br/>
+    </div>
+    <div>
+      <h2 class="vision">Visão</h2>
+      <p>{{vision}} </p><br/>
+    </div>
+    <div>
+      <h2 class="values">Valores</h2>
+      <p>{{values}} </p><br/>
+    </div>
+  </div>
 </section>

@@ -33,28 +33,74 @@
       }
     }
   }
+  #containerSintese{
+    padding: 2%;
+    padding-right: 100px;
+    width: 70%;
+    h2{
+      font-weight: 700;
+      line-height: 150%;
+      font-size: 2rem;
+      color: var(--logo-color-blue-2);
+      // color: var(--text-color-primary-2);
+      // color: var(--logo-color-red);
+      @media screen and (max-width:1000px) {
+        font-size:1.5rem;
+      }
+      @media screen and (max-width:680px) {
+        font-size:1.0rem;
+      }
+    }
+
+  }
   #containerIcons{
     position: fixed;
-    right: 2%;
+    right: 15px;
+    top:220px;
     bottom: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+    @media screen and (max-width:1000px) {
+      top:160px;
+    }
+    @media screen and (max-width:680px) {
+      top:90px;
+    }
     #imgIcon{
       width: 100px;
       height: 100px;
+      @media screen and (max-width:1000px) {
+        width: 80px;
+        height: 80px;
+      }
+      @media screen and (max-width:680px) {
+        width: 40px;
+        height: 40px;
+      }
     }
+
   }
 }
 
-.img1{
-  width: 200px;
-  height: 200px;
+.imgCarousel{
+  width: 500px;
+  height: 500px;
+}
+.imgBox_{
+  width: 500px;
+  height: 500px;
 }
 .containerCarousel{
-
-  width: 1000px;
+  width: 500px;
   height: 500px;
-  background-color: var(--logo-color-violet);
+  @media screen and (max-width:1000px) {
+    width: 350px ;
+    height: 350px;
+  }
+  @media screen and (max-width:680px) {
+    width: 200px;
+    height: 200px;
+  }
 }
