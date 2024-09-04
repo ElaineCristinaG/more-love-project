@@ -2,105 +2,140 @@
 
 :root{
   font-family: var(--primary-font-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
+.home{
+  z-index: -1;
+  background-image: url('/assets/images/fotos/projeto-amor-familia-filho-autista-feliz.jpeg');
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  padding-left: 2%;
+  padding-right: 2%;
+  @media screen and (max-width:1024px) {
+   
+  }
+  @media screen and (max-width:768px) {
+    background-image: url('/assets/images/fotos/projeto-amor-familia-filho-autista-feliz.jpeg');
+  }
+}
+
+
 #containerMain{
-  // background-color: bisque;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 25px;
-  padding:12% 3% 15% 3%;
-  h1{
-    text-align: center;
-    color:var(--logo-color-blue);
-    font-weight: 500;
-  }
-  #centre{
-    display:flex;
-    justify-content: space-between;
-  }
-  #containerDestaque{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  padding:0% 3% 15% 3%;
+  position: fixed;
+  top: 125px;
 
-    #containerLogoMain{
-      width: 450px;
-      height: 225px;
-      #img_logo_main{
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
   #containerSintese{
-    padding: 2%;
-    padding-right: 100px;
-    width: 70%;
-    h2{
+    padding: 110px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    @media screen and (max-width:1024px) {
+      padding: 50px 60px;
+    }
+    @media screen and (max-width:768px) {
+      width: 100%;
+      text-align: center;
+    }
+    h3{
+      font-size: 3rem;
+      color: var(--logo-color-blue-light);
       font-weight: 700;
-      line-height: 150%;
-      font-size: 2rem;
-      color: var(--logo-color-blue-2);
-      // color: var(--text-color-primary-2);
-      // color: var(--logo-color-red);
-      @media screen and (max-width:1000px) {
+      text-shadow: 0.1em 0.1em #333;
+      @media screen and (max-width:1024px) {
         font-size:1.5rem;
       }
-      @media screen and (max-width:680px) {
+      @media screen and (max-width:768px) {
+        font-size:1.4rem;
+      }
+    }
+    p{
+      font-weight: 300;
+      line-height: 150%;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--logo-color-yellow);
+      text-shadow: 0.1em 0.1em #272727;
+      // text-shadow: 0.1em 0.1em #c4b7b7;
+      @media screen and (max-width:1024px) {
+        font-size:1.5rem;
+      }
+      @media screen and (max-width:768px) {
         font-size:1.0rem;
       }
     }
 
   }
-  #containerIcons{
-    position: fixed;
-    right: 15px;
-    top:220px;
-    bottom: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    @media screen and (max-width:1000px) {
-      top:160px;
-    }
-    @media screen and (max-width:680px) {
-      top:90px;
-    }
-    #imgIcon{
-      width: 100px;
-      height: 100px;
-      @media screen and (max-width:1000px) {
-        width: 80px;
-        height: 80px;
-      }
-      @media screen and (max-width:680px) {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-  }
+ 
 }
 
-.imgCarousel{
-  width: 500px;
-  height: 500px;
-}
-.imgBox_{
-  width: 500px;
-  height: 500px;
-}
-.containerCarousel{
-  width: 500px;
-  height: 500px;
+.imgCarousel img{
+  width: 100%;
+  height: 100%;
+  // object-fit: cover;
   @media screen and (max-width:1000px) {
-    width: 350px ;
-    height: 350px;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
   }
-  @media screen and (max-width:680px) {
-    width: 200px;
-    height: 200px;
+  @media screen and (max-width:768px) {
+    width: 700px;
+    height: 500px;
+    object-fit: scale-down;
   }
+
+}
+
+.containerCarousel{
+  width: 100vw;
+  height: 100%;
+  @media screen and (max-width:1000px) {
+    width: 500px;
+    height: 400px;
+  }
+  @media screen and (max-width:768px) {
+    width: 700px;
+    height: 400px;
+  }
+}
+//position fixed
+#containerIcons{
+  position: fixed;
+  right:400px;
+  top:95px;
+  bottom: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1000;
+  @media screen and (max-width:1024px) {
+    top:550px;
+    right: 175px;
+  }
+  @media screen and (max-width:768px) {
+    top:650px;
+    right: 40%;
+  }
+  #imgIcon{
+    width: 70px;
+    height: 70px;
+    @media screen and (max-width:10024px) {
+      width: 50px;
+      height: 50px;
+    }
+    @media screen and (max-width:768px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
 }

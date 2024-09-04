@@ -3,76 +3,142 @@
 *{
   font-family: var(--primary-font);
   font-weight: 300;
-
 }
+
 #container_header{
+  width: 100vw;
   display: flex;
-  justify-content:center;
+  gap: 30px;
   align-items: center;
+  padding: 0 3% ;
   color: var(--text-color-primary-2);
-  background-color: var(--color-bg-white);
+  // background-color: rgba(255, 255, 255, 0.5); 
+  background-color: #FFFFFF;
   position: fixed;
   z-index: 1000;
-  // background-color: var(--logo-color-violet-2);
-  background-color: #2f5ada;
-  background-color: #4163d2;
-
+  top:0;
+  @media screen and (max-width: 768px) {
+    // gap: 15px;
+    padding: 0 1% ;
+  }
+  @media screen and (max-width: 1024px) {
+    gap: 35px;
+    padding: 0 2% ;
+  }
 }
+
 #containerLogo {
-  width: 40%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 1024px) {
+    width:200px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
   #img_logo{
-    width: 100%;
-    padding-left: 3%;
+    width: 300px;
+    @media screen and (max-width: 1024px) {
+      width:200px;
+    }
+    @media  screen and (max-width:768px) {
+      width: 200px;
+    }
   }
 }
 
 #containerNavBar{
-  padding-right: 2%;
-
-#navbar {
-  padding-right: 1%;
-  width:780px;
-  @media screen and (max-width : 1000px) {
-    width:500px;
+  padding: 4% 0% 0% 0%;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  @media screen and (max-width: 1024px) {
+    padding: 4% 0% 0% 4%;
+    gap: 9px;
   }
   @media  screen and (max-width:768px) {
-    width:400px;
+    gap: 10px
   }
-  #navbarItens{
+  #menuLink{
+    color: var(--text-color-primary-1);
+    text-align: center;
+    text-decoration: none;
+    @media screen and (max-width: 1024px) {}
+    @media  screen and (max-width:768px) {}
+    .menuLinkA{
+      font-size: 1.1rem;
+      font-weight: 500;
+      @media screen and (max-width: 1024px) {
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+      @media  screen and (max-width:768px) {
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+    }
+  }
+  
+  #menuLink:hover {
+    color: var(--logo-color-blue-light);
+    #navbar{
+      width: 720px;
+    }
+  }
+}
+
+ #containerIcons{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    display:inline;
-  }
-  #menuLink {
-    display:inline-flex;
-    padding: 1% ;
-    text-decoration: none;
-    color: var(--color-bg-white);
-    font-size: 1.8rem;
-    font-weight: 500;
-    @media  screen and (max-width:1000px) {
-      font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 1000;
+    padding-left: 70px;
+    @media screen and (max-width: 1024px) {
+      gap:15px;
     }
-    @media  screen and (max-width:768px) {
-      font-size: 0.8rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 5px;
+      position: fixed;
+      top: 250px;
+      right: 30px;
     }
-}
-  #menuLink:hover {
-      color: var(--primary-color-blue);
-      #navbar{
-        width: 720px;
+    svg{
+      width: 100px;
+      @media screen and (max-width: 1024px) {
+        width: 60px;
       }
+      @media screen and (max-width: 768px) {
+        width: 55px;
+      }
+    }
+   
+    #imgIcon{
+      width: 70px;
+      height: 70px;
+      @media screen and (max-width:1024px) {
+        width: 50px;
+        height: 50px;
+      }
+      @media screen and (max-width:768px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
 
   }
 
 
-}
-}
+  #bgIcon{
+    
+    fill: var(--logo-color-blue-light);
+    @media screen and (max-width:768px) {
+      fill: var( --logo-color-blue-light-2)
+    }
+  }
 
-
+  

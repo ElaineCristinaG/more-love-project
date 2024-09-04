@@ -5,15 +5,30 @@
 
 }
 #whoWeAre{
-  padding: 13% 2% 0 2%;
+  padding: 15% 2% 0 2%;
+  @media screen and (max-width: 1000px) {
+    padding-top: 19%;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 16%;
+    padding-right: 70px;
+  }
   p{
     line-height: 150%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
 
   h2{
-    color:var(--logo-color-blue-2);
+    color:var(--color-primary-text-2);
+    color:var(--logo-color-blue-light);
     font-size: 3rem;
     text-align: center;
     @media screen and (max-width: 1000px) {
@@ -25,50 +40,126 @@
   }
 
   #textSintese{
-    text-align: start;
+    text-align: center;
     // line-height: 100%;
     line-height: 150%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3rem;
     margin: 0%;
+    padding: 0% 2%;
+    @media screen and (max-width: 1000px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
+  .tab{
+    width: 20px;
+  }
+
   .containerHistory{
     display: flex;
     gap:5%;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+    }
     .containerText{
       padding: 2%;
     }
     .destaque{
-      color: red;
+      color: var(--logo-color-red);
       font-weight: 600;
     }
   }
-  .containerMission{
-    display: flex;}
 
+  .containerMission{
+    display: flex;
+    gap: 10px;
+    .containerCard{
+      border-radius: 10px;
+      border: 2px solid;
+    }
+    .red{
+      border-color: var(--logo-color-red);
+    }
+    .yellow{
+      border-color:var(--logo-color-yellow);
+    }
+    .green{
+      border-color: var(--logo-color-green);
+    }
+
+
+  }
+  .box_card{
+    border: 1px solid;
+    border-radius: 15px ;
+    width: 425px;
+    padding-bottom: 5%;
+  }
+  .box_mission{
+    border-color: var(--logo-color-red);
+  }
+  .box_vision{
+    border-color: var(--logo-color-blue-light) !important;
+  }
+  .box_values{
+    border-color: var(--logo-color-green);
+  }
+ 
+  .card_{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 24px;
+    
+    label{
+      font-size: 14px;
+      margin: 0;
+    }
+  }
    .mission{
-      color:var(--logo-color-red);
-      font-size: 24px;
+      background-color: var(--logo-color-red);
+      color:var(--logo-color-yellow);
+      
     }
     .vision{
-      color:var(--logo-color-green);
-      font-size: 24px;
+      background-color: var(--logo-color-blue-light);
+      color:var(--color-bg-white);
+      
     }
     .values{
-      color:var(--logo-color-violet-2);
-      font-size: 24px;
+      background-color: var(--logo-color-green);
+      color:var(--logo-color-red);
+      border-color: var(--logo-color-green);
     }
+
+
     .fotoA{
-      // background-color: var(--logo-color-yellow);
       border-radius: 15px;
       display:flex;
       justify-content: center;
       align-items: center;
+
     }
     #imgA{
       border-radius: 20px;
-      // width:90%;
-      // height:80%;
       box-shadow: 10px var(--logo-color-yellow);
+      @media screen and (max-width: 1000px) {
+        width:350px;
+        height: 350px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 5%;
+
+      }
     }
 }
+
