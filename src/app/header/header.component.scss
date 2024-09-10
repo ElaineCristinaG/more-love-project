@@ -12,8 +12,10 @@
   align-items: center;
   padding: 0 3% ;
   color: var(--text-color-primary-2);
-  // background-color: rgba(255, 255, 255, 0.5); 
-  background-color: #FFFFFF;
+
+  background-color: var( --color-bg-white-2);
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(4, 150, 235, 0.2) 0px 7px 29px 0px;
   position: fixed;
   z-index: 1000;
   top:0;
@@ -57,6 +59,7 @@
   @media screen and (max-width: 1024px) {
     padding: 4% 0% 0% 4%;
     gap: 9px;
+    width: 600px;
   }
   @media  screen and (max-width:768px) {
     gap: 10px
@@ -68,10 +71,10 @@
     @media screen and (max-width: 1024px) {}
     @media  screen and (max-width:768px) {}
     .menuLinkA{
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       font-weight: 500;
       @media screen and (max-width: 1024px) {
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 400;
       }
       @media  screen and (max-width:768px) {
@@ -99,6 +102,7 @@
     padding-left: 70px;
     @media screen and (max-width: 1024px) {
       gap:15px;
+      padding-left: 0px;
     }
     @media screen and (max-width: 768px) {
       flex-direction: column;

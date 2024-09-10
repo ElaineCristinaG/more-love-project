@@ -29,15 +29,16 @@
   --logo-color-red:#E50000;
   
 
-  --color-bg-white:#FFFF;
+  --color-bg-white:#FFFFFF;
+  --color-bg-white-2:#FFFFF0;
 }
 *{
-  margin:0%;
-  padding: 0%;
+  margin: 0%;
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-weight: 200;
   font-size: 16px;
+  
   p{font-family: var(---primary-font);}
   h1{
     font-family: var(---primary-font-1);
