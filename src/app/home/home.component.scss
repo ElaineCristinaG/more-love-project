@@ -1,31 +1,25 @@
 @import '../../styles.scss';
 
-:root{
-  font-family: var(--primary-font-1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
 .home{
-  z-index: -1;
-  background-image: url('/assets/images/fotos/projeto-amor-familia-filho-autista-feliz.jpeg');
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.5;
-  padding-left: 2%;
-  padding-right: 2%;
-  @media screen and (max-width:1024px) {
-   
-  }
+  // z-index: -1;
+  // background-image: url('/assets/images/fotos/projeto-amor-familia-filho-autista-feliz.jpeg');
+  // width: 100vw;
+  // height: 100vh;
+  // opacity: 0.5;
+  // padding-left: 2%;
+  // padding-right: 2%;
+  @media screen and (max-width:1024px) { }
   @media screen and (max-width:768px) {
-    background-image: url('/assets/images/fotos/projeto-amor-familia-filho-autista-feliz.jpeg');
+    // background-image: url('/assets/images/fotos/projeto-amor-familia-filho-autista-feliz.jpeg');
   }
 }
 
-
+main{
+  
+}
 #containerMain{
-  display: flex;
+  display: flex;overflow-y: auto;
   flex-direction: column;
   justify-content: center;
   gap: 25px;
@@ -46,10 +40,10 @@
       text-align: center;
     }
     h3{
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: var(--logo-color-blue-light);
       font-weight: 700;
-      text-shadow: 0.1em 0.1em #333;
+      // text-shadow: 0.1em 0.1em #333;
       @media screen and (max-width:1024px) {
         font-size:1.5rem;
       }
@@ -62,8 +56,8 @@
       line-height: 150%;
       font-size: 2rem;
       font-weight: 700;
-      color: var(--logo-color-yellow);
-      text-shadow: 0.1em 0.1em #272727;
+      color: var(--logo-color-blue-light);
+      text-shadow: 0.1em 0.1em #4b4a4a;
       // text-shadow: 0.1em 0.1em #c4b7b7;
       @media screen and (max-width:1024px) {
         font-size:1.5rem;
@@ -77,32 +71,34 @@
  
 }
 
-.imgCarousel img{
-  width: 100%;
-  height: 100%;
+.imgCarousel_ img{
+  // width: 1000px;
+  height: 600px;
   // object-fit: cover;
-  @media screen and (max-width:1000px) {
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
+  @media screen and (max-width:1024px) {
+    // width: 500px;
+    // height: 400px;
+    // object-fit: cover;
   }
   @media screen and (max-width:768px) {
-    width: 700px;
-    height: 500px;
-    object-fit: scale-down;
+    // width: 700px;
+    // height: 500px;
+    // object-fit: scale-down;
   }
 
 }
 
 .containerCarousel{
-  width: 100vw;
-  height: 100%;
-  @media screen and (max-width:1000px) {
-    width: 500px;
-    height: 400px;
+  background-color: var(--logo-color-blue-light);
+  padding: 10px;
+  width: 1100px;
+  // height: 600px;
+  @media screen and (max-width:1024px) {
+    width: 1024px;
+    // height: 600px;
   }
   @media screen and (max-width:768px) {
-    width: 700px;
+    width: 768px;
     height: 400px;
   }
 }
