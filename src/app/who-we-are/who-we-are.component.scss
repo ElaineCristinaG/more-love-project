@@ -1,12 +1,8 @@
 @import "../../styles.scss";
-:root{
 
-
-
-}
 #whoWeAre{
   padding: 10% 2% 0 2%;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     padding-top: 19%;
   }
   @media screen and (max-width: 768px) {
@@ -18,7 +14,8 @@
     font-weight: 400;
     font-size: 1.3rem;
     text-align: center;
-    @media screen and (max-width: 1000px) {
+    text-align: justify;
+    @media screen and (max-width: 1024px) {
       font-size: 1rem;
     }
     @media screen and (max-width: 768px) {
@@ -31,7 +28,7 @@
     color:var(--logo-color-blue-light);
     font-size: 3rem;
     text-align: center;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       font-size: 1.3rem;
     }
     @media screen and (max-width: 680px) {
@@ -40,14 +37,13 @@
   }
 
   #textSintese{
-    text-align: center;
-    // line-height: 100%;
+    text-align: justify;
     line-height: 150%;
     font-weight: 400;
     font-size: 1.3rem;
     margin: 0%;
     padding: 0% 2%;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       font-size: 1rem;
     }
     @media screen and (max-width: 768px) {
@@ -80,34 +76,41 @@
 
   .containerMission{
     display: flex;
-    gap: 10px;
-    .containerCard{
-      border-radius: 10px;
-      border: 2px solid;
+    flex-direction: row;
+    gap: 15px;
+    @media screen  and (max-width: 1024px){
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
     }
-    .red{
-      border-color: var(--logo-color-red);
-    }
-    .yellow{
-      border-color:var(--logo-color-yellow);
-    }
-    .green{
-      border-color: var(--logo-color-green);
-    }
-
-
+   
   }
+
   .box_card{
     border: 1px solid;
     border-radius: 15px ;
     width: 425px;
-    padding-bottom: 5%;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+     @media screen  and (max-width: 1024px){
+      width: 700px;
+    }
+     @media screen  and (max-width: 768px){
+      width: 500px;
+    }
+   
+    .card_content{
+      font-size: 14px;
+      margin: 0;
+      padding: 5px;
+    }
   }
   .box_mission{
     border-color: var(--logo-color-red);
   }
   .box_vision{
-    border-color: var(--logo-color-blue-light) !important;
+    border-color:  var(--logo-color-blue-light) !important;
   }
   .box_values{
     border-color: var(--logo-color-green);
@@ -116,29 +119,25 @@
   .card_{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    font-size: 24px;
-    
-    label{
-      font-size: 14px;
-      margin: 0;
-    }
-  }
-   .mission{
+    font-size: 1.5rem;
+    padding: 5px 0px 5px 0px;
+    &.mission{
       background-color: var(--logo-color-red);
       color:var(--logo-color-yellow);
-      
     }
-    .vision{
+    &.vision{
       background-color: var(--logo-color-blue-light);
       color:var(--color-bg-white);
-      
     }
-    .values{
+    &.values{
       background-color: var(--logo-color-green);
       color:var(--logo-color-red);
       border-color: var(--logo-color-green);
     }
+    
 
+  }
+  
 
     .fotoA{
       border-radius: 15px;
@@ -150,9 +149,9 @@
     #imgA{
       border-radius: 20px;
       box-shadow: 10px var(--logo-color-yellow);
-      @media screen and (max-width: 1000px) {
-        width:350px;
-        height: 350px;
+      @media screen and (max-width: 1024px) {
+        width:760px;
+        height: auto;
       }
       @media screen and (max-width: 768px) {
         width: 50%;

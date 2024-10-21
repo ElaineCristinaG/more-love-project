@@ -2,15 +2,12 @@
 
 <section id="whoWeAre">
   <h2 class="t1">Quem Somos</h2> <br/>
-  <p id="textSintese"> {{textSintese1}} </p>
-  <p id="textSintese"> {{textSintese2}} </p>
-  <p id="textSintese"> {{textSintese3}} </p>
-  <p id="textSintese"> {{textSintese4}} </p>
+  <p id="textSintese"> {{textSintese1}} {{textSintese2}} {{textSintese3}} {{textSintese4}}</p>
   <br/>
   <h2 class="t2">Como nasceu o projeto?</h2>
   <div class="containerHistory">
     <div class="containerText">
-      <p>{{textHistory1}} <br/><b class="destaque">O AMOR ...</b> </p> <br/>
+      <p>{{textHistory1}} <b class="destaque">O AMOR ...</b> </p> <br/>
       <p>{{textHistory2}} </p>
       <p>{{textHistory3}} </p>
       <p>{{textHistory4}} <b class="destaque">PROJETO O AMOR</b></p>
@@ -20,17 +17,22 @@
     </div>
   </div>
   <div class="containerMission">
+
     <div class="box_card box_mission">
       <h2 class=" card_ mission">Nossa Missão</h2>
-      <label>{{mission}} </label>
+      <div class="card_content"><p >{{mission}} </p></div>
     </div>
+
     <div class="box_card box_vision">
       <h2 class="card_ vision">Nossa Visão</h2>
-      <label>{{vision}} </label><br/>
+      <div class="card_content"> <p>{{vision}}</p> </div> <br/>
     </div>
+
     <div class="box_card box_values">
       <h2 class="card_ values">Nossos Valores</h2>
-      <label>{{values}} </label><br/>
+      <div class="card_content " styles="text-align: start "> <p>{{values}}</p> </div> <br/>
     </div>
+
   </div>
+
 </section>
