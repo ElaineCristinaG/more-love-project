@@ -1,4 +1,13 @@
-:root{
-   background-color: var(--logo-color-blue-2);
+.footer{
+   background-color: var(--logo-color-blue-light);
+   width: 100vw;
+   padding: 2% 0%;
+   height: 18vh;
+  //  position: fixed;
+  //  bottom: 0;
+   display: flex;
+   gap:10%;
+   justify-content: center;
+
 }
 
