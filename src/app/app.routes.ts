@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { SupportComponent } from './support/support.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { JuridicalComponent } from './juridical/juridical.component';
+import { PageUnderConstructionComponent } from './page-under-construction/page-under-construction.component';
 
 export const routes: Routes = [
 
@@ -14,5 +15,7 @@ export const routes: Routes = [
   { path:'support', component: SupportComponent},
   { path:'we', component: WhoWeAreComponent},
   { path:'juridical', component: JuridicalComponent},
+  { path:'page-construction', component: PageUnderConstructionComponent},
+
 
 ];

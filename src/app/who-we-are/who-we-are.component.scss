@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 #whoWeAre{
-  padding: 10% 2% 0 2%;
+  padding: 10% 2% 2% 2%;
   @media screen and (max-width: 1024px) {
     padding-top: 19%;
   }
@@ -76,6 +76,7 @@
 
   .containerMission{
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     gap: 15px;
     @media screen  and (max-width: 1024px){
@@ -83,7 +84,7 @@
       align-items: center;
       padding-top: 15px;
     }
-   
+
   }
 
   .box_card{
@@ -99,7 +100,7 @@
      @media screen  and (max-width: 768px){
       width: 500px;
     }
-   
+
     .card_content{
       font-size: 14px;
       margin: 0;
@@ -115,7 +116,7 @@
   .box_values{
     border-color: var(--logo-color-green);
   }
- 
+
   .card_{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -134,9 +135,9 @@
       color:var(--logo-color-red);
       border-color: var(--logo-color-green);
     }
-    
+
   }
-  
+
 
     .fotoA{
       border-radius: 15px;
@@ -159,6 +160,6 @@
     }
 
     }
-   
+
 }
 

@@ -7,6 +7,7 @@
 
 #container_header{
   width: 100vw;
+  height: 20vh;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -22,10 +23,12 @@
   @media screen and (max-width: 768px) {
     // gap: 15px;
     padding: 0 1% ;
+    height: 13vh;
   }
   @media screen and (max-width: 1024px) {
     gap: 35px;
     padding: 0 2% ;
+    height: 15vh;
   }
 }
 
@@ -38,7 +41,7 @@
     width:200px;
   }
   @media screen and (max-width: 768px) {
-    width: 200px;
+    width: 180px;
   }
   #img_logo{
     width: 300px;
@@ -83,7 +86,7 @@
       }
     }
   }
-  
+
   #menuLink:hover {
     color: var(--logo-color-blue-light);
     #navbar{
@@ -120,7 +123,7 @@
         width: 55px;
       }
     }
-   
+
     #imgIcon{
       width: 60px;
       height: 60px;
@@ -138,9 +141,8 @@
 
 
   #bgIcon{
-    
+
     fill: var(--logo-color-blue-light);
     @media screen and (max-width:768px) {  }
   }
 
-  
